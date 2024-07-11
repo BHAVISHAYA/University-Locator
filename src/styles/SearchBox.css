@@ -1,0 +1,60 @@
+/* .searchBox {
+    border : 3px solid black;
+} */
+
+
+input, select {
+    width: 90%;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background-color: #F7F7FF;
+    text-align: center;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 1.5rem;
+    color: #D8315B;
+    font-weight: 700;
+    border : 5px solid #D8315B;
+}
+
+
+select {
+    cursor: pointer;
+}
+
+option {
+    overflow: auto;
+}
+
+::placeholder {
+    color: #D8315B;
+}
+
+button {
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: #D8315B;
+    border : 5px solid #F7F7FF;
+    color: #F7F7FF;
+    width: 90%;
+    outline: 4px solid #D8315B;
+}
+
+button:hover {
+    background-color: #F7F7FF;
+    color: #D8315B;
+    border : 4px solid #D8315B;
+    outline: 4px solid #F7F7FF;
+}
