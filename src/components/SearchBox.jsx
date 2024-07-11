@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "../styles/SearchBox.css";
 import { UniversityCard } from './UniversityCard';
-// import { UniversityCard } from './UniversityCard';
 
 export const SearchBox = () => {
 
@@ -62,7 +61,6 @@ export const SearchBox = () => {
                 setUpdatedArray(countryArr.filter((currCountry) => {
                     return (currCountry["state-province"] === event.target.value);
                 }));
-                console.log(updatedArray);
             }
             else {
                 setUniversityArr(countryArr);
@@ -109,8 +107,7 @@ export const SearchBox = () => {
                     </div>
                     <div className='col-md-3 py-md-0 pb-3'>
                         <select name="university" value={universityValue} onChange={inputEvent}>
-                            <option disabled selected>Select University</option>
-                            <option > Select All </option>
+                            <option selected>Select University</option>
                             {
                                 universityArr.map((currCountry, index) => {
                                     return <>
