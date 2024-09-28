@@ -34,7 +34,7 @@ export const SearchBox = () => {
         const getApiData = async () => {
             try {
                 console.log(country);
-                let response = await fetch(`http://universities.hipolabs.com/search?country=${country}`);
+                let response = await fetch(`https://universities.hipolabs.com/search?country=${country}`);
                 let countryArray = await response.json();
                 let stateArray = getState(countryArray);
                 setStateArr(stateArray);
